@@ -7,7 +7,8 @@ import '../../../stylesheets/Color.scss'
 
 class Color extends Component {
     render() {
-        const { title, color, rating, timestamp, onRemove, onRate } = this.props        return (
+        const { title, color, rating, timestamp, onRemove, onRate } = this.props        
+        return (
             <section className="color" style={this.style}>
                 <h1 ref="title">{title}</h1>
                 <button onClick={onRemove}>
